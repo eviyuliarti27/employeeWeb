@@ -5,6 +5,7 @@ import { ConfrimDialogComponent } from '../confrim-dialog/confrim-dialog.compone
 import { EmployeeServiceService } from '../services/employee-service.service';
 import { EmployeeAddComponent } from './employee-add.component';
 import { ToastrService } from 'ngx-toastr';
+import { DetailEmployeeComponent } from '../detail-employee/detail-employee.component';
 
 export interface employeeElement {
   position: number;
@@ -59,16 +60,25 @@ export class EmployeeComponent implements OnInit {
 
   addData() {
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
+    dialogConfig.width = "600px"
     this.dialog.open(EmployeeAddComponent, dialogConfig);  
   }
 
-  editData(value:any) {
+  edit(value:any) {
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
+    dialogConfig.data = value
+    dialogConfig.width = "600px"
     dialogConfig.autoFocus = true;
     this.dialog.open(EmployeeAddComponent, dialogConfig);
+  }
+
+  detail(value:any) {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.data = value
+    dialogConfig.width = "700px"
+    dialogConfig.autoFocus = true;
+    this.dialog.open(DetailEmployeeComponent, dialogConfig);
   }
 
   delete(value:any){

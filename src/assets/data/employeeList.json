@@ -11,7 +11,7 @@
       "basicSalary": 7000000,
       "status": "Pegawai tetap",
       "group": "Project Manager",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 2,
@@ -23,7 +23,7 @@
       "basicSalary": 7000000,
       "status": "Pegawai tetap",
       "group": "Product Lead",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 3,
@@ -35,7 +35,7 @@
       "basicSalary": 7000000,
       "status": "Pegawai tetap",
       "group": "Product Lead",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 4,
@@ -47,7 +47,7 @@
       "basicSalary": 7000000,
       "status": "Pegawai tetap",
       "group": "Product Lead",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 5,
@@ -59,7 +59,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Programmer",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 6,
@@ -71,7 +71,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Programmer",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 7,
@@ -83,7 +83,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Programmer",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 8,
@@ -95,7 +95,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "QC",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 9,
@@ -107,7 +107,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Support",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 10,
@@ -119,7 +119,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Support",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 11,
@@ -131,7 +131,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Programmer",
-      "description": "ABCDE"
+      "description": "Seoul Korea"
     },
     {
       "position": 12,
@@ -143,7 +143,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Support",
-      "description": "20221211"
+      "description": "Seoul Korea"
     },
     {
       "position": 13,
@@ -155,7 +155,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Support",
-      "description": "20221211"
+      "description": "Seoul Korea"
     },
     {
       "position": 14,
@@ -167,7 +167,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Data Analys",
-      "description": "20221211"
+      "description": "Seoul Korea"
     },
     {
       "position": 15,
@@ -179,7 +179,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Data Analys",
-      "description": "20221211"
+      "description": "Seoul Korea"
     },
     {
       "position": 16,
@@ -191,7 +191,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "Programmer",
-      "description": "20221211"
+      "description": "Seoul Korea"
     },
     {
       "position": 17,
@@ -203,7 +203,7 @@
       "basicSalary": 5500000,
       "status": "Pegawai tetap",
       "group": "QC",
-      "description": "20221211"
+      "description": "Seoul Korea"
     },
     {
       "position": 18,
@@ -215,7 +215,7 @@
       "basicSalary": 5000000,
       "status": "Pegawai tetap",
       "group": "QC",
-      "description": "20221211"
+      "description": "Seoul Korea"
     },
     {
       "position": 19,
@@ -226,8 +226,8 @@
       "birthDate": "2003-12-03T18:25:43.511Z",
       "basicSalary": 5500000,
       "status": "Pegawai tetap",
-      "group": "Product Lead",
-      "description": "20221211"
+      "group": "Data Analys",
+      "description": "Seoul Korea"
     },
     {
       "position": 20,

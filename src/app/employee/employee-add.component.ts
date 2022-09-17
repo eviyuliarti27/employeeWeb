@@ -1,9 +1,10 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { EmployeeServiceService } from '../services/employee-service.service';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 export interface employeeElement {
   position: number;
@@ -58,6 +59,7 @@ export class EmployeeAddComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private dialogRef: MatDialogRef<EmployeeAddComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any,
     private toastr: ToastrService,
     private employeeService: EmployeeServiceService, 
   ) {
@@ -74,7 +76,7 @@ export class EmployeeAddComponent implements OnInit {
   }
   
   updateEmployee() {
-    if(this.employeeList == null){
+    if(this.data == null){
       this.mode = 'input'
       this.formInput.patchValue({
         userName: '',
@@ -90,15 +92,15 @@ export class EmployeeAddComponent implements OnInit {
     }else {
       this.mode='edit'
       this.formInput.patchValue({
-        userName: this.employeeList[0].userName,
-        firstName: this.employeeList[0].firstName,
-        lastName: this.employeeList[0].lastName,
-        email: this.employeeList[0].email,
-        birthDate: this.employeeList[0].birthDate,
-        basicSalary: this.employeeList[0].basicSalary,
-        status: this.employeeList[0].status,
-        group: this.employeeList[0].group,
-        description: this.employeeList[0].description,
+        userName: this.data.userName,
+        firstName: this.data.firstName,
+        lastName: this.data.lastName,
+        email: this.data.email,
+        birthDate: this.data.birthDate,
+        basicSalary: this.data.basicSalary,
+        status: this.data.status,
+        group: this.data.group,
+        description: this.data.description,
       });
     }
   }

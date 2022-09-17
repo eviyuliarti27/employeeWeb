@@ -38,13 +38,14 @@
                     <th scope="col">Status</th>
                     <th scope="col">Group</th>
                     <th scope="col">Description</th>
+                    <th scope="col">Detail</th>
                   </tr>
                 </thead>
                 <tbody *ngFor="let item of dataEmployee | paginate: { itemsPerPage: 10, currentPage: page, totalItems: total }" >
                   <tr>
-                    <td>{{item.position}}</td>
-                    <td style="cursor: pointer" (click)="editData(item)"><i class="small material-icons">create</i></td>
-                    <td style="cursor: pointer" (click)="delete(item)"><i class="small material-icons">delete</i></td>
+                    <td class="text-center">{{item.position}}</td>
+                    <td class="text-center" style="cursor: pointer" (click)="edit(item)"><i class="small material-icons">create</i></td>
+                    <td class="text-center" style="cursor: pointer" (click)="delete(item)"><i class="small material-icons">delete</i></td>
                     <td>{{item.userName}}</td>
                     <td>{{item.firstName}}</td>
                     <td>{{item.lastName}}</td>
@@ -54,6 +55,7 @@
                     <td>{{item.status}}</td>
                     <td>{{item.group}}</td>
                     <td>{{item.description}}</td>
+                    <td class="text-center" style="cursor: pointer" (click)="detail(item)"><i class="material-icons" style="font-size: 15px;">search</i></td>
                   </tr>
                 </tbody>
                   <caption class="caption">List of users {{total}} employees</caption>

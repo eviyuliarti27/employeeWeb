@@ -23,6 +23,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { LoginComponent } from './login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { DetailEmployeeComponent } from './detail-employee/detail-employee.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
     EmployeeAddComponent,
     DashboardComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    DetailEmployeeComponent
   ],
   imports: [
     BrowserModule,
