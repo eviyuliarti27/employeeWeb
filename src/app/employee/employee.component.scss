@@ -1,0 +1,48 @@
+.container{
+    background-image:url('/assets/images/bg-image.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    width: auto;
+    height: 600px;
+  }
+
+.button{
+    width: 32px;
+    padding: 3px 0px 0px 0px;
+    text-align: center;
+    background-color: #c4dceb;
+    color: #3f484e ;
+}
+
+.input-search{
+    height: 35px;
+}
+
+.card{
+    width: 75em;
+    top: 20em !important;
+    height: 32em;
+    background: #b1b9c2;
+}
+
+.end-0 {
+    right: 16px !important;
+}
+
+.btn{
+    color: #3f484e;
+    background-color: #c4dceb;
+}
+
+.ng-select {
+    margin-top: -15px !important;
+}
+
+.modal-margin{
+    margin: 5px 25px 57px 25px;
+}
+
+.caption{
+    color: #3f484e;
+}

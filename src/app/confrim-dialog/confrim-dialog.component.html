@@ -1,0 +1,6 @@
+<h2 mat-dialog-title class="modal-title mb-0">{{data.title}}</h2>
+<div mat-dialog-content style="padding: 5px 5px 10px 0px;">{{data.message}}</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close class="buttons-dialog btn btn-danger" (click)="dialogRef.close(true)">Yes</button>
+  <button mat-button mat-dialog-close class="btn buttons-dialog btn-secondary" (click)="dialogRef.close(false)">No</button>
+</div>

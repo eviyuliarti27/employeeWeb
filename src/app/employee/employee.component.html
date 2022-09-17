@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="main-panel">
+      <app-navbar></app-navbar>
+  </div>
+
+    <div class="row">
+      <div class="card position-absolute start-50 translate-middle">
+        <div class="card-body">
+          <div class="row col-md-12 mb-3">
+            <div class="col-md-2">
+                <button type="button" (click)="addData()" class="button border-0 rounded-circle">
+                  <i class="material-icons">add</i>
+                </button>
+            </div>
+    
+            <div class="col-md-3 position-absolute end-0">
+              <form class="d-flex">
+                <div class="input-group flex-nowrap input-search">
+                  <button class="btn btn-success border-0" type="submit"><i class="material-icons">search</i></button>
+                  <input type="text" #employee class="form-control" (keyup)="search(employee.value)"  placeholder="search" aria-label="search" aria-describedby="addon-wrapping">
+                </div>
+              </form>
+            </div>
+          </div>
+             
+          <table class="table table-bordered table-striped table-sm table-hover" >
+                <thead>
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Birth date</th>
+                    <th scope="col">Basic salary</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Group</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let item of dataEmployee | paginate: { itemsPerPage: 10, currentPage: page, totalItems: total }" >
+                  <tr>
+                    <td>{{item.position}}</td>
+                    <td style="cursor: pointer" (click)="editData(item)"><i class="small material-icons">create</i></td>
+                    <td style="cursor: pointer" (click)="delete(item)"><i class="small material-icons">delete</i></td>
+                    <td>{{item.userName}}</td>
+                    <td>{{item.firstName}}</td>
+                    <td>{{item.lastName}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.birthDate | date:'mediumDate'}}</td>
+                    <td>{{item.basicSalary  | number}}</td>
+                    <td>{{item.status}}</td>
+                    <td>{{item.group}}</td>
+                    <td>{{item.description}}</td>
+                  </tr>
+                </tbody>
+                  <caption class="caption">List of users {{total}} employees</caption>
+          </table>
+
+          <div class="position-absolute bottom-0 start-50 translate-middle-x">
+            <pagination-controls (pageChange)="pageChangeEvent($event)"></pagination-controls>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+
+  
