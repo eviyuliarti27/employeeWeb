@@ -131,6 +131,30 @@
       "group": "Programmer",
       "description": "Seoul Korea",
       "id": 11
+    },
+    {
+      "userName": "kai",
+      "firstName": "Kai",
+      "lastName": "Exo",
+      "email": "kai@gmail.com",
+      "birthDate": "1994-01-14",
+      "basicSalary": 6500000,
+      "status": "Pegawai tetap",
+      "group": "Support",
+      "description": "Seoul Korea",
+      "id": 12
+    },
+    {
+      "userName": "sehun",
+      "firstName": "Sehun",
+      "lastName": "Exo",
+      "email": "sehun@gmail.com",
+      "birthDate": "1994-04-15",
+      "basicSalary": 6000000,
+      "status": "Pegawai tetap",
+      "group": "QC",
+      "description": "Seoul Korea",
+      "id": 13
     }
   ],
   "comments": [

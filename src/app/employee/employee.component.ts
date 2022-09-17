@@ -68,7 +68,6 @@ export class EmployeeComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(
       (res:any) => {
-        this.toastr.success('Data save successfully', 'Success');
         this.getEmployeeList();
       },
     )
@@ -79,7 +78,13 @@ export class EmployeeComponent implements OnInit {
     dialogConfig.data = value
     dialogConfig.width = "600px"
     dialogConfig.autoFocus = true;
-    this.dialog.open(EmployeeAddComponent, dialogConfig);
+    let dialogRef = this.dialog.open(EmployeeAddComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe(
+      (res:any) => {
+        this.getEmployeeList();
+      },
+    )
   }
 
   detail(value:any) {
