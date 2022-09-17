@@ -1,0 +1,50 @@
+{
+  "employeeList": [
+    {
+      "userName": "jisoo",
+      "firstName": "Jisoo",
+      "lastName": "BLACKPINK",
+      "email": "jiso@gmail.com",
+      "birthDate": "1995-01-03",
+      "basicSalary": 7000000,
+      "status": "Pegawai tetap",
+      "group": 2,
+      "description": "Seoul Korea",
+      "id": 1
+    },
+    {
+      "userName": "jeniii",
+      "firstName": "Jenni",
+      "lastName": "BLACKPINK",
+      "email": "jeni@gmail.com",
+      "birthDate": "1996-01-16",
+      "basicSalary": 7000000,
+      "status": "Pegawai tetap",
+      "group": 1,
+      "description": "Seoul Korea",
+      "id": 2
+    },
+    {
+      "userName": "rose",
+      "firstName": "Rose",
+      "lastName": "BLACKPINK",
+      "email": "rose@gmail.com",
+      "birthDate": "1997-02-11",
+      "basicSalary": 7000000,
+      "status": "Pegawai tetap",
+      "group": 1,
+      "description": "Seoul Korea",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

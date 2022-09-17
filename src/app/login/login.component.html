@@ -16,12 +16,12 @@
                     <p class="text-center text-muted mt-2" style="font-size:11px;">Welcome to ViuLiving Web Real estate for Customer Manage & Monitoring</p>
                 </div>
                 <div class="form">
-                    <form class="login-form">
+                    <form [formGroup]="registerForm" class="login-form">
                         <div class="form-group">
-                            <input class="form-control" type="text" placeholder="username"/>
+                            <input class="form-control" type="text" formControlName="username" placeholder="username"/>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" type="password" placeholder="password"/>
+                            <input class="form-control" type="password" formControlName="password" placeholder="password"/>
                         </div>
                         <div class="form-group d-md-flex">
                             <div class="d-flex justify-content-center w-100 text-left">
@@ -36,7 +36,7 @@
                                 </label>
                             </div>
                         </div>
-                        <button class="btn" routerLink="/dashbboard">login</button>
+                        <button class="btn" routerLink="/dashbboard" (click)="onSubmit()">login</button>
                         <p class="message">Not registered? <a href="#">Create an account</a></p>
                     </form>
                 </div>

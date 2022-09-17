@@ -13,14 +13,24 @@ export class EmployeeServiceService {
   ) { }
 
   getEmployee(page: number, sort: string): Observable<any> {
-    // const url = 'http://localhost:3000/data';
-    const url = '../assets/data/employeeList.json';
+    const url = 'http://localhost:3000/employeeList';
+    // const url = '../assets/data/employeeList.json';
     return this.http.get(url + '?page=' + page + '?sort=' + sort);
   }
 
   addEmployee(params: any): Observable<any> {
-    const url = 'http://localhost:3000/data/posts';
+    const url = 'http://localhost:3000/employeeList/';
     return this.http.post(url, params);
+  }
+
+  updateEmployee(params: any, id: number): Observable<any> {
+    const url = 'http://localhost:3000/employeeList/';
+    return this.http.put(url+id, params);
+  }
+
+  deleteEmployee(id: number): Observable<any> {
+    const url = 'http://localhost:3000/employeeList/'+id;
+    return this.http.delete(url);
   }
 
   getItems() {

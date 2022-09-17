@@ -108,7 +108,6 @@ export class EmployeeAddComponent implements OnInit {
 
   addData() {
     const params = {
-      position: 31,
       userName: this.formInput.controls.userName.value,
       firstName: this.formInput.controls.firstName.value,
       lastName: this.formInput.controls.lastName.value,
@@ -119,14 +118,29 @@ export class EmployeeAddComponent implements OnInit {
       group: this.formInput.controls.group.value,
       description: this.formInput.controls.description.value,
     }
-    this.employeeService.addEmployee(params)
-    .subscribe(
-      (res:any) => {
-        this.toastr.success('Data save successfully', 'Success');
-        this.back();
-      },
-      err => console.log(err)
-    );
+    if(this.data == null){
+      this.employeeService.addEmployee(params)
+      .subscribe(
+        (res:any) => {
+          this.toastr.success('Data save successfully', 'Success');
+          this.back();
+        },
+        err => {
+          this.toastr.error('Error while fetching the Records', err)
+        }
+      );
+    }else {
+      this.employeeService.updateEmployee(params, this.data.id)
+      .subscribe(
+        (res:any) => {
+          this.toastr.warning('Data update successfully', 'Success');
+          this.back();
+        },
+        err => {
+          this.toastr.error('Error while fetching the Records', err)
+        }
+      );
+    }
   }
 
   back() {

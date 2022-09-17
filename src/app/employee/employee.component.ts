@@ -50,11 +50,13 @@ export class EmployeeComponent implements OnInit {
     this.employeeService.getEmployee(this.page, sort)
     .subscribe(
       (res:any) => {
-        this.dataEmployee = res.data;
-        this.searchData = res.data
-        this.total = res.data.length;
+        this.dataEmployee = res;
+        this.searchData = res
+        this.total = res.length;
       },
-      err => console.log(err)
+      err => {
+        this.toastr.error('Error while fetching the Records')
+      }
     );
   }
 
@@ -90,8 +92,16 @@ export class EmployeeComponent implements OnInit {
     });
     confirmDialog.afterClosed().subscribe(result => {
       if (result === true) {
-        this.toastr.error('Delete successfull');
-        this.getEmployeeList()
+        this.employeeService.deleteEmployee(value.id)
+        .subscribe(
+          (res:any) => {
+            this.toastr.error('Delete successfull');
+            this.getEmployeeList()
+          },
+          err => {
+            this.toastr.error('Error while fetching the Records', err)
+          }
+        );
       }
     });
   }
