@@ -64,7 +64,14 @@ export class EmployeeComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus = true;
     dialogConfig.width = "600px"
-    this.dialog.open(EmployeeAddComponent, dialogConfig);  
+    let dialogRef = this.dialog.open(EmployeeAddComponent, dialogConfig);  
+
+    dialogRef.afterClosed().subscribe(
+      (res:any) => {
+        this.toastr.success('Data save successfully', 'Success');
+        this.getEmployeeList();
+      },
+    )
   }
 
   edit(value:any) {

@@ -59,6 +59,78 @@
       "group": "Programmer",
       "description": "Seoul Korea",
       "id": 5
+    },
+    {
+      "userName": "suho",
+      "firstName": "Suho",
+      "lastName": "Exo",
+      "email": "suho@gmail.com",
+      "birthDate": "1991-05-19",
+      "basicSalary": 7500000,
+      "status": "Pegawai tetap",
+      "group": "Project Manager",
+      "description": "Seoul Korea",
+      "id": 6
+    },
+    {
+      "userName": "lay",
+      "firstName": "Lay",
+      "lastName": "Exo",
+      "email": "lay@gmail.com",
+      "birthDate": "1991-10-26",
+      "basicSalary": 7000000,
+      "status": "Pegawai tetap",
+      "group": "Data Analys",
+      "description": "Seoul Korea",
+      "id": 7
+    },
+    {
+      "userName": "baekhyun",
+      "firstName": "Baekhyun",
+      "lastName": "Exo",
+      "email": "baek@gmail.com",
+      "birthDate": "1992-05-06",
+      "basicSalary": 5500000,
+      "status": "Pegawai tetap",
+      "group": "Programmer",
+      "description": "Seoul Korea",
+      "id": 8
+    },
+    {
+      "userName": "chen",
+      "firstName": "Chen",
+      "lastName": "Exo",
+      "email": "chen@gmail.com",
+      "birthDate": "1992-09-21",
+      "basicSalary": 6000000,
+      "status": "Pegawai tetap",
+      "group": "Support",
+      "description": "Seoul Korea",
+      "id": 9
+    },
+    {
+      "userName": "chanyeol",
+      "firstName": "Chanyeol",
+      "lastName": "Exo",
+      "email": "chanyeol@gmail.com",
+      "birthDate": "1992-12-27",
+      "basicSalary": 6000000,
+      "status": "Pegawai tetap",
+      "group": "Support",
+      "description": "Seoul Korea",
+      "id": 10
+    },
+    {
+      "userName": "do",
+      "firstName": "Kyungsoo",
+      "lastName": "Exo",
+      "email": "do@gmail.com",
+      "birthDate": "1993-01-12",
+      "basicSalary": 6500000,
+      "status": "Pegawai tetap",
+      "group": "Programmer",
+      "description": "Seoul Korea",
+      "id": 11
     }
   ],
   "comments": [
