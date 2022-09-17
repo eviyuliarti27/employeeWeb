@@ -30,7 +30,7 @@ export class EmployeeAddComponent implements OnInit {
   public mode: string= '';
   public selectedGroup: any;
 
-  cities = [
+  groups = [
     {id: 1, name: 'Product lead'},
     {id: 2, name: 'Project Manager'},
     {id: 3, name: 'Programmer'},

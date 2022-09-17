@@ -8,7 +8,7 @@
       "birthDate": "1995-01-03",
       "basicSalary": 7000000,
       "status": "Pegawai tetap",
-      "group": 2,
+      "group": "Project Manager",
       "description": "Seoul Korea",
       "id": 1
     },
@@ -20,7 +20,7 @@
       "birthDate": "1996-01-16",
       "basicSalary": 7000000,
       "status": "Pegawai tetap",
-      "group": 1,
+      "group": "Product lead",
       "description": "Seoul Korea",
       "id": 2
     },
@@ -32,9 +32,33 @@
       "birthDate": "1997-02-11",
       "basicSalary": 7000000,
       "status": "Pegawai tetap",
-      "group": 1,
+      "group": "Product lead",
       "description": "Seoul Korea",
       "id": 3
+    },
+    {
+      "userName": "lisa",
+      "firstName": "Lisa",
+      "lastName": "BLACKPINK",
+      "email": "lisa@gmail.com",
+      "birthDate": "1997-03-27",
+      "basicSalary": 6700000,
+      "status": "Pegawai tetap",
+      "group": "Product lead",
+      "description": "Seoul Korea",
+      "id": 4
+    },
+    {
+      "userName": "xiumin",
+      "firstName": "Xiumin",
+      "lastName": "Exo",
+      "email": "xiumin@gmail.com",
+      "birthDate": "1990-03-26",
+      "basicSalary": 6000000,
+      "status": "Pegawai tetap",
+      "group": "Programmer",
+      "description": "Seoul Korea",
+      "id": 5
     }
   ],
   "comments": [

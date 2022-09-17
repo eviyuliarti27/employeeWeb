@@ -40,16 +40,14 @@
             </div>
            
             <div class="col-md-6">
-                <ng-select
-                    [items]="cities"
-                    bindLabel="name"
-                    formControlName="group" 
-                    [virtualScroll]="true"
-                    bindValue="id"
-                    placeholder="group *"
-                    [(ngModel)]="selectedGroup"
-                    required>
-                </ng-select>
+                <select
+                class="form-control mb-2"
+                formControlName="group"   required >
+                <option value="">Choose Group</option>
+                <option *ngFor="let group of groups" [ngValue]="group.name">
+                    {{ group.name }}
+                </option>
+                </select>
             </div>   
         </div>
         
