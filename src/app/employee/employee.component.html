@@ -43,7 +43,7 @@
                 </thead>
                 <tbody *ngFor="let item of dataEmployee | paginate: { itemsPerPage: 10, currentPage: page, totalItems: total }" >
                   <tr>
-                    <td class="text-center">{{item.position}}</td>
+                    <td class="text-center">{{item.id}}</td>
                     <td class="text-center" style="cursor: pointer" (click)="edit(item)"><i class="small material-icons">create</i></td>
                     <td class="text-center" style="cursor: pointer" (click)="delete(item)"><i class="small material-icons">delete</i></td>
                     <td>{{item.userName}}</td>
