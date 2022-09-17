@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { Inject } from '@angular/core';
 
 @Component({
@@ -10,10 +10,14 @@ import { Inject } from '@angular/core';
 export class DetailEmployeeComponent implements OnInit {
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: any
+    @Inject(MAT_DIALOG_DATA) public data: any,
+    private dialogRef: MatDialogRef<DetailEmployeeComponent>,
   ) { }
 
   ngOnInit(): void {
   }
 
+  back() {
+    this.dialogRef.close();
+  }
 }
